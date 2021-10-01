@@ -1,0 +1,5 @@
+# mac file
+.DS_Store
+
+# ssh-key
+.ssh
