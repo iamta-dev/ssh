@@ -17,7 +17,6 @@
 # Generating a new SSH key and adding it to the ssh-agent
 # https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 echo "ssh-key setup .........."
-zip -er my-ssh.zip .ssh
 rm -rf ~/.ssh
 cp -R .ssh ~/.ssh
 cd ~/.ssh
