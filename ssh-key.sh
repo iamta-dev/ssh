@@ -16,6 +16,8 @@
 
 # Generating a new SSH key and adding it to the ssh-agent
 # https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+# abbr add --force ssh="cd ~/.ssh && ssh-add -D && ssh-add id_rsa_blockfint"
 echo "ssh-key setup .........."
 unzip -a my-ssh.zip
 rm -rf ~/.ssh
@@ -23,6 +25,7 @@ cp -R .ssh ~/.ssh
 cd ~/.ssh
 chmod 600 *
 eval $(ssh-agent -s)
+ssh-add -D
 ssh-add id_rsa_blockfint
 git config --global user.name "Natthawat Narin"
 git config --global user.email "natthawat.n@blockfint.com"
