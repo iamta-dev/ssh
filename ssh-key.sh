@@ -17,6 +17,9 @@
 # Generating a new SSH key and adding it to the ssh-agent
 # https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 # abbr add --force ssh="cd ~/.ssh && ssh-add -D && ssh-add id_rsa_blockfint"
+
+# fix # Could not open a connection to your authentication agent
+# eval `ssh-agent -s`
 echo "ssh-key setup .........."
 # sudo apt-get install unzip
 unzip -a my-ssh.zip
