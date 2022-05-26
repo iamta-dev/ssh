@@ -29,9 +29,10 @@ cd ~/.ssh
 chmod 600 *
 eval $(ssh-agent -s)
 ssh-add -D
-ssh-add id_rsa_blockfint
+ssh-add id_rsa_tazgg
+ssh-add id_rsa_xd
 git config --global user.name "Natthawat Narin"
-git config --global user.email "natthawat.n@blockfint.com"
+git config --global user.email "natthawat.narin@gmail.com"
 cd ~ && cat .gitconfig
 
 ### wsl
